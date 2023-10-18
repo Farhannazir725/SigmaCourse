@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+
+        /* Element Selector */
+        div{
+            /* background-color: red; */
+        }
+        /* class Selector */
+        .red{
+            background-color: yellow;
+        }
+        /* Id Selector */
+        #one{
+            background-color: blueviolet;
+        }
+
+        /* child Selector */
+        div > p{
+            background-color: orange;
+        }
+
+        /* Descendant Selector */
+       div p {
+        background-color: brown;
+       }
+
+       /* Universal Selector */
+       *{
+        margin: 10px;
+        padding: 10px;
+       }
+
+       /* Pseudo Selectot */
+       a:visited{
+        color: pink ;
+       }
+       a:link{
+        color: green ;
+       }
+       a:active{
+        background-color: blueviolet;
+       }
+       a:hover{
+        background-color: yellowgreen;
+       }
+       p:first-child{
+        background-color: orange;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <p>hello im the one</p>
+        <p>hello im the Second</p>
+    
+    </main>
+    <div>I'm a Div</div>
+    <div class="red">I'm a Second Div</div>
+    <div id="one">Farhan Nazir</div>
+    <div>
+        <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ipsa tempora pariatur nostrum?</p>
+    </article></div>
+    <a href="http://www.youtube.com">Yoututbe</a>
+    <a href="http://www.facebook.com">Facebook</a>
+</body>
+</html>

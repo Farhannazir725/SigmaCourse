@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* html,body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-color: rgba(152, 8, 8, 0.393);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        
+        }
+        .box{
+            height: 350px;
+            width: 300px;;
+            background-color: rgb(227, 239, 239);
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        } */
+      .box{
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 1280px; */
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        background-color: aquamarine;
+      }
+      .container{
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        margin: 23px auto;
+        background-color: aquamarine;
+      
+        min-height: 80vh;
+        /* font-size: 18px; */
+      }
+      html{
+        font-size: 12px ;
+      }
+      .container > div{
+        font-size: 2em;
+        width: 50%;
+        border: 2px solid black ;
+      }
+      .mycont{
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: 23px auto;
+        color: red;
+        font-size: 25px;
+        /* width: 100vmin; */
+        width: 80vw;
+       
+      }
+      .container >div >div{
+        width: 50%;
+        border: 2px solid red;
+      }
+    </style>
+</head>
+<body>
+    <div class="box ">
+        this is box 
+    </div>
+    <div class="container">
+        <div>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam beatae sit cumque ullam nulla, hic vel ipsum incidunt quasi nisi tenetur corporis laborum adipisci in reiciendis praesentium unde dolore possimus, consectetur quo ex? Libero tempore nostrum at nemo iusto quae nam fugit facere quod, architecto eaque tenetur qui nulla ex exercitationem ut aliquid doloribus quia! Aliquid, dolor.
+            <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores, laboriosam in cupiditate explicabo enim, cumque quia doloremque ducimus ad natus magnam repellat quasi et ratione magni labore praesentium quisquam.</div>
+        </div>
+    </div>
+    <div class="mycont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio vero, eius ipsam ab quidem illum facere dicta nam mollitia, exercitationem nulla excepturi dolore eaque? Magnam dolorem dolor ipsa qui perferendis consectetur, debitis, vitae assumenda rem expedita obcaecati dignissimos culpa.</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity CASCADE</title>
+</head>
+<style>
+    /* the spcificity of element selector is 1 */
+    h1{
+        color: orange;
+    }
+    /* the spcificity of element selector is 10 */
+    .red{
+        color: red !important;
+    }
+    .yello{
+        color: yellow;
+    }
+    .green{
+        color: green;
+    }
+    /* This is a example of attribute selector the spcificity of element selector is 10 */
+    /* [data-x=b]{
+        background-color: orange;
+    } */
+</style>
+<body>
+    <div>
+        <h1 class="red yello green " data-x="b">Css Is styling Tool</h1>
+    </div>
+</body>
+</html>
